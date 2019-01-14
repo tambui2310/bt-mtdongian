@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="calculator">
+        <input type="text" class="box-calculation" value="" id="nhapso">
+        <div class="box-button">
+            <input type="button" name="" class="refresh" value="C" onclick="nhapso.value=''">
+            <input type="button" name="" class="del" value="D" onclick="nhapso.value=nhapso.value.substr(0,nhapso.value.length-1)">
+            <input type="button" name="" class="number" value="+" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="number" value="-" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="number" value="*" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="number" value="/" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="number" value="9" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="number" value="8" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="number" value="7" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="number" value="6" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="number" value="5" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="number" value="4" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="number" value="3" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="number" value="2" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="number" value="1" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="number" value="0" onclick="nhapso.value+=this.value">
+            <input type="button" name="" class="equal" value="=" onclick="nhapso.value=eval(nhapso.value)">
+            <input type="button" class="dot" value ="." onclick="nhapso.value+=this.value">
+        </div>
+        </div>
+    </div>    
+    <style type="text/css">* {padding: 0; margin: 0;}
+		body {font-family: sans-serif; font-size: 14px; color: #333;}
+		.calculator {width: 300px; height: auto; margin: 20px auto; padding: 10px; border: 1px solid #666; border-radius: 4px;}
+		.box-calculation {width: calc(100% - 16px); background-color: #f7f8f9; border: 1px solid #666; padding: 5px 7px; font-size: 20px; border-bottom: none;}
+		.box-result {width: calc(100% - 16px); background-color: #f9f9f9; border: 1px solid #666; padding: 5px 7px; font-size: 20px; border-top: none; text-align: right;}
+		.box-button button {width: 32.4%; height: 40px; margin-top: 5px; font-size: 20px; color: #fff; border: none; cursor: pointer; border-radius: 4px;}
+
+		.number {width: 32.4%; height: 40px; margin-top: 5px; font-size: 20px; background-color: #7f7f7f; border: none; cursor: pointer; border-radius: 4px;}
+		button.operation {background-color: #cccccc;}
+		.refresh, .del {width: 32.4%; height: 40px; margin-top: 5px; font-size: 20px; background-color: #b2b2b2; border: none; cursor: pointer; border-radius: 4px;}
+		button.del {background-color: #7f7f7f;}
+		.dot, .equal {width: 32.4%; height: 40px; margin-top: 5px; font-size: 20px; background-color: #56aaff; border: none; cursor: pointer; border-radius: 4px;}
+</style>
+<script type="text/javascript">
+   
+	
+</script>
+
+</body>
+</html>
